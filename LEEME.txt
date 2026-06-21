@@ -1,0 +1,114 @@
+╔════════════════════════════════════════════════════════════════╗
+║   MVP DE MI VIDA — TRIBUTO DE DÍA DEL PADRE (TEMA BALONCESTO)    ║
+║   Guía rápida de personalización                                 ║
+╚════════════════════════════════════════════════════════════════╝
+
+ARCHIVOS DEL PROYECTO
+----------------------
+index.html   → la estructura de la página (normalmente no necesitas tocarlo)
+style.css    → todos los estilos visuales (colores, animaciones, diseño)
+script.js    → AQUÍ EDITAS TODO: textos, fotos y música
+img/         → coloca aquí tus fotografías
+music/       → coloca aquí tu canción en .mp3
+
+
+CÓMO VER LA PÁGINA
+--------------------
+Haz doble clic en "index.html" y se abrirá en tu navegador. Para ver los
+cambios después de editar, simplemente recarga la página (F5).
+
+
+────────────────────────────────────────────────────────────────────
+1) CAMBIAR EL TÍTULO PRINCIPAL Y EL SUBTÍTULO
+────────────────────────────────────────────────────────────────────
+Abre "script.js" con cualquier editor de texto (Bloc de notas, VS Code,
+etc). En las primeras líneas encontrarás el bloque "CONFIG.hero":
+
+    hero: {
+      eyebrow: "Edición especial · Día del Padre",
+      title: "Papá,<br>mi MVP de toda la vida",
+      subtitle: "Cada partido importante de mi vida lo jugué...",
+      buttonText: "Comenzar el homenaje",
+      buttonLink: "#galeria",
+      bigNumber: "23"
+    },
+
+- "title"     → tu título principal. Usa <br> donde quieras un salto de línea.
+- "subtitle"  → el texto debajo del título.
+- "buttonText"→ el texto del botón principal.
+- "bigNumber" → el número decorativo gigante de fondo (puedes poner
+                el número favorito de tu papá, su edad, etc.)
+
+Guarda el archivo y recarga la página.
+
+
+────────────────────────────────────────────────────────────────────
+2) CAMBIAR LOS MENSAJES / DEDICATORIAS
+────────────────────────────────────────────────────────────────────
+En "script.js", busca el bloque "CONFIG.messages". Cada mensaje es una
+tarjeta con un título y un texto:
+
+    messages: [
+      {
+        title: "El mejor entrenador",
+        text: "Antes de enseñarme a driblar, me enseñaste a..."
+      },
+      ...
+    ],
+
+Puedes editar los que ya existen, borrar los que no quieras, o copiar y
+pegar un bloque { title: "...", text: "..." } para agregar más tarjetas.
+No hay límite de cantidad.
+
+
+────────────────────────────────────────────────────────────────────
+3) AGREGAR TUS FOTOGRAFÍAS
+────────────────────────────────────────────────────────────────────
+1. Copia tus fotos dentro de la carpeta /img
+2. En "script.js", busca el bloque "CONFIG.photos" y agrega una línea
+   por cada foto:
+
+    { src: "img/foto1.jpg", caption: "Tu leyenda aquí", tag: "1" },
+
+Más detalles dentro de img/LEEME.txt.
+
+
+────────────────────────────────────────────────────────────────────
+4) AGREGAR TU CANCIÓN DE FONDO
+────────────────────────────────────────────────────────────────────
+1. Copia tu archivo .mp3 dentro de la carpeta /music
+2. En "script.js", busca el bloque "CONFIG.song" y escribe el nombre
+   del archivo, el título y el artista:
+
+    song: {
+      src: "music/cancion.mp3",
+      title: "Nombre de la canción",
+      artist: "Artista",
+      defaultVolume: 70
+    },
+
+Más detalles dentro de music/LEEME.txt.
+
+
+────────────────────────────────────────────────────────────────────
+5) OTROS DETALLES QUE TAMBIÉN PUEDES EDITAR EN script.js
+────────────────────────────────────────────────────────────────────
+- CONFIG.stats   → las 4 estadísticas del marcador estilo NBA
+                    (texto y número de cada una)
+- CONFIG.footer  → el mensaje final y la firma de cierre
+
+
+CONSEJOS FINALES
+-------------------
+- No es necesario tocar index.html ni style.css para personalizar tus
+  textos, fotos o música: todo se controla desde script.js.
+- Si algo no se ve como esperabas, revisa que no hayas borrado una coma
+  o una comilla al editar script.js (cada línea debe verse igual de
+  estructurada que las demás).
+- Cuando quieras compartir la página, sube toda la carpeta completa
+  (index.html, style.css, script.js, img/ y music/) a un servicio de
+  hosting gratuito (por ejemplo Netlify o GitHub Pages), o simplemente
+  comprime la carpeta en un .zip y envíasela a tu papá para que la abra
+  en su computadora o celular.
+
+Feliz Día del Padre. 🏀🧡
