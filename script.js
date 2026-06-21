@@ -49,10 +49,10 @@ const CONFIG = {
      Puedes agregar tantas fotos como quieras, el diseño se acomoda solo.
      --------------------------------------------------------------- */
   photos: [
-    { src: "foto_1.jpg", caption: "Aqui posando como verdaderos modelos", tag: "1" },
-    { src: "foto_2.jpg", caption: "Tu y yo de ratones, uno mas dienton que otro",     tag: "2" },
-    { src: "foto_3.jpg", caption: "Tu de joven en tu mejor momento",     tag: "3" },
-    { src: "foto_4.jpg", caption: "Pensando en tu existencia",           tag: "4" },
+    { src: "foto_1.png", caption: "Aqui posando como verdaderos modelos", tag: "1" },
+    { src: "foto_2.png", caption: "Tu y yo de ratones, uno mas dienton que otro",     tag: "2" },
+    { src: "foto_3.png", caption: "Tu de joven en tu mejor momento",     tag: "3" },
+    { src: "foto_4.png", caption: "Pensando en tu existencia",           tag: "4" },
     { src: "foto_5.jpg", caption: "Que elegancia la de francia",     tag: "5" },
     { src: "foto_6.jpg", caption: "Jugando en las ligas mayores",      tag: "6" }
   ],
